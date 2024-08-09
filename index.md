@@ -21,6 +21,7 @@ abstract: Vision Transformer (ViT) architectures traditionally employ a grid-bas
 
 
 ## Citation
+{% raw %}
 ```
 @inproceedings{Aasan2024,
   title={A Spitting Image: Modular Superpixel Tokenization in Vision Transformers},
@@ -29,3 +30,4 @@ abstract: Vision Transformer (ViT) architectures traditionally employ a grid-bas
   year={2024}
 }
 ```
+{% endraw %}
