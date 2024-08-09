@@ -2,13 +2,9 @@
 layout: project_page
 permalink: /
 
-title: A Spitting Image: Modular Superpixel Tokenization in Vision Transformers
-authors:
-    Marius Aasan, Odd Kolbjørnsen, Anne Schistad Solberg, Adín Ramirez Rivera
-affiliations:
-    University of Oslo
-    Aker BP
-    SFI Visual Intelligence
+title: "A Spitting Image: Modular Superpixel Tokenization in Vision Transformers"
+authors: Marius Aasan, Odd Kolbjørnsen, Anne Schistad Solberg, Adín Ramirez Rivera
+affiliations: University of Oslo, Aker BP, SFI Visual Intelligence  
 paper: https://arxiv.org
 # video: https://www.youtube.com/@UniOslo
 code: https://github.com/dsb-ifi/SPiT
