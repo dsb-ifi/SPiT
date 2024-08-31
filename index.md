@@ -85,7 +85,7 @@ Results in unsupervised salient segmentation are noteworthy as SPiT is only pre-
 @inproceedings{Aasan2024,
   title={A Spitting Image: Modular Superpixel Tokenization in Vision Transformers},
   author={Aasan, Marius and Kolbj\ornsen, Odd and Schistad Solberg, Anne and Ram\'irez Rivera, Ad\'in},
-  boottitle={{CVF/ECCV} More Exploration, Less Exploitation ({MELEX} {ECCVW})},
+  booktitle={{CVF/ECCV} More Exploration, Less Exploitation Workshop ({MELEX} {ECCVW})},
   year={2024}
 }
 ```
