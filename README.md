@@ -56,7 +56,7 @@ We provide a [Jupyter notebook](https://nbviewer.jupyter.org/github/dsb-ifi/SPiT
 
 ### RViT and On-Line Voronoi Tesselation
 
-Currently the code features some slight modifications to streamline use of the RViT models. The original RViT models sampled partitions from a dataset of pre-computed Voronoi tesselations for training in deployment. This is impractical for deployment, and we have yet to implement a CUDA kernel for computing Voronoi with lower memory overhead.
+Currently the code features some slight modifications to streamline use of the RViT models. The original RViT models sampled partitions from a dataset of pre-computed Voronoi tesselations for training and evaluation. This is impractical for deployment, and we have yet to implement a CUDA kernel for computing Voronoi with lower memory overhead.
 
 However, we have developed a fast implementation for generating fast tesselations with PCA trees [1], which mimic Voronoi tesselations relatively well, and can be computed on-the-fly. There are, however still some minor issues with the small capacity RViT models. Consequently, the RViT-B16 models will perform marginally different than the reported results in the paper. *We appreciate the readers patience with regard to this matter.*
 
