@@ -5,7 +5,7 @@ setup(
     version='0.1',
     description='A Spitting Image: Modular Superpixel Tokenization in Vision Transformers',
     author='Marius Aasan <mariuaas(at)ifi.uio.no>',
-    licence='GNUv3',
+    licence='MIT',
     packages=['spit'],
     install_requires = [
         'torch >= 2.1.0',
