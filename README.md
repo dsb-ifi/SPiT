@@ -1,8 +1,12 @@
 # A Spitting Image: Modular Superpixel Tokenization in Vision Transformers
 
+## Quick Navigation
+| [**Project Website**](https://dsb-ifi.github.io/SPiT/) | [**Example Notebook**](https://nbviewer.jupyter.org/github/dsb-ifi/SPiT/blob/main/notebooks/eval_in1k.ipynb) | [**Paper (arXiv)**](https://arxiv.org/abs/2408.07680) | ~~**Proceedings (ECCVW 2024)**~~ | 
+
+
 ![SPiT Figure 1](/assets/fig1.png "Examples of feature maps from SPiT-B16")
 
-| [**Project Website**](https://dsb-ifi.github.io/SPiT/) | [**Example Notebook**](https://nbviewer.jupyter.org/github/dsb-ifi/SPiT/blob/main/notebooks/eval_in1k.ipynb) | [**Paper (arXiv)**](https://arxiv.org/abs/2408.07680) | ~~**Proceedings (ECCVW 2024)**~~ | 
+## SPiT: Superpixel Transformers
 
 This repo contains code and weights for **A Spitting Image: Modular Superpixel Tokenization in Vision Transformers**, accepted for MELEX, ECCVW 2024.
 
