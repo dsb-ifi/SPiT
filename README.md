@@ -4,12 +4,13 @@
 
 **[Marius Aasan](https://www.mn.uio.no/ifi/english/people/aca/mariuaas/), [Odd Kolbjørnsen](https://www.mn.uio.no/math/english/people/aca/oddkol/), [Anne Schistad Solberg](https://www.mn.uio.no/ifi/english/people/aca/anne/), [Adín Ramírez Rivera](https://www.mn.uio.no/ifi/english/people/aca/adinr/)** <br>
 
-[![Paper](https://img.shields.io/badge/Website-green)](https://dsb-ifi.github.io/SPiT/)
-[![Paper](https://img.shields.io/badge/Paper-arXiv-red)](https://arxiv.org/abs/2408.07680)
-[![Paper](https://img.shields.io/badge/Paper-ECCVW_2024-blue)](https://sites.google.com/view/melex2024)
-[![Paper](https://img.shields.io/badge/Notebook-Example-orange)](https://nbviewer.jupyter.org/github/dsb-ifi/SPiT/blob/main/notebooks/eval_in1k.ipynb) <br>
+[![Website](https://img.shields.io/badge/Website-green)](https://dsb-ifi.github.io/SPiT/)
+[![PaperArxiv](https://img.shields.io/badge/Paper-arXiv-red)](https://arxiv.org/abs/2408.07680)
+[![PaperECCVW](https://img.shields.io/badge/Paper-ECCVW_2024-blue)](https://sites.google.com/view/melex2024)
+[![NotebookExample](https://img.shields.io/badge/Notebook-Example-orange)](https://nbviewer.jupyter.org/github/dsb-ifi/SPiT/blob/main/notebooks/eval_in1k.ipynb) <br>
 
-![SPiT Figure 1](/assets/fig1.png "Examples of feature maps from SPiT-B16")
+![SPiT Figure 1](/assets/fig1.png#gh-light-mode-only "Examples of feature maps from SPiT-B16")
+![SPiT Figure 1](/assets/fig1_dark.png#gh-dark-mode-only "Examples of feature maps from SPiT-B16")
 
 </div>
 
