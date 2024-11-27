@@ -4,6 +4,9 @@
 
 **[Marius Aasan](https://www.mn.uio.no/ifi/english/people/aca/mariuaas/), [Odd Kolbjørnsen](https://www.mn.uio.no/math/english/people/aca/oddkol/), [Anne Schistad Solberg](https://www.mn.uio.no/ifi/english/people/aca/anne/), [Adín Ramírez Rivera](https://www.mn.uio.no/ifi/english/people/aca/adinr/)** <br>
 
+
+**[DSB @ IFI @ UiO](https://www.mn.uio.no/ifi/english/research/groups/dsb/)** <br>
+
 [![Website](https://img.shields.io/badge/Website-green)](https://dsb-ifi.github.io/SPiT/)
 [![PaperArxiv](https://img.shields.io/badge/Paper-arXiv-red)](https://arxiv.org/abs/2408.07680)
 [![PaperECCVW](https://img.shields.io/badge/Paper-ECCVW_2024-blue)](https://sites.google.com/view/melex2024)
