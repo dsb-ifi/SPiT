@@ -1,10 +1,15 @@
+<div align="center">
 # A Spitting Image: Modular Superpixel Tokenization in Vision Transformers
 
-## Quick Navigation
-| [**Project Website**](https://dsb-ifi.github.io/SPiT/) | [**Example Notebook**](https://nbviewer.jupyter.org/github/dsb-ifi/SPiT/blob/main/notebooks/eval_in1k.ipynb) | [**Paper (arXiv)**](https://arxiv.org/abs/2408.07680) | ~~**Proceedings (ECCVW 2024)**~~ | 
+**[Marius Aasan](https://www.mn.uio.no/ifi/english/people/aca/mariuaas/), [Odd Kolbjørnsen](https://www.mn.uio.no/math/english/people/aca/oddkol/), [Anne Schistad Solberg](https://www.mn.uio.no/ifi/english/people/aca/anne/), [Adín Ramírez Rivera](https://www.mn.uio.no/ifi/english/people/aca/adinr/)** <br>
 
+[![Paper](https://img.shields.io/badge/Website-green)](https://dsb-ifi.github.io/SPiT/)
+[![Paper](https://img.shields.io/badge/Paper-arXiv-red)](https://arxiv.org/abs/2408.07680)
+[![Paper](https://img.shields.io/badge/Paper-ECCVW_2024-blue)](https://sites.google.com/view/melex2024)
+[![Paper](https://img.shields.io/badge/Notebook-Example-orange)](https://nbviewer.jupyter.org/github/dsb-ifi/SPiT/blob/main/notebooks/eval_in1k.ipynb)
 
-![SPiT Figure 1](/assets/fig1.png "Examples of feature maps from SPiT-B16")
+<div align="center">
+![SPiT Figure 1](/assets/fig1.png "Examples of feature maps from SPiT-B16") <br>
 
 ## SPiT: Superpixel Transformers
 
