@@ -9,7 +9,7 @@
 
 [![Website](https://img.shields.io/badge/Website-green)](https://dsb-ifi.github.io/SPiT/)
 [![PaperArxiv](https://img.shields.io/badge/Paper-arXiv-red)](https://arxiv.org/abs/2408.07680)
-[![PaperECCVW](https://img.shields.io/badge/Paper-ECCVW_2024-blue)](https://sites.google.com/view/melex2024)
+[![PaperECCVW](https://img.shields.io/badge/Paper-ECCVW_2024-blue)](https://doi.org/10.1007/978-3-031-93806-1_11)
 [![NotebookExample](https://img.shields.io/badge/Notebook-Example-orange)](https://nbviewer.jupyter.org/github/dsb-ifi/SPiT/blob/main/notebooks/eval_in1k.ipynb) <br>
 
 ![SPiT Figure 1](/assets/fig1.png#gh-light-mode-only "Examples of feature maps from SPiT-B16")
@@ -25,7 +25,7 @@ For an introduction to our work, visit the [project webpage](https://dsb-ifi.git
 
 ## Installation
 
-We are working on releasing this package on PyPi, however, the package can currently be installed via:
+The package can currently be installed via:
 
 ```bash
 # HTTPS
@@ -86,22 +86,22 @@ Note that the RViT models are inherently stochastic so that different runs can y
 - [X] Add manual links with MD5 hash for manual weight download.
 - [X] Add module for loading models, and provide example notebook.
 - [X] Create temporary solution to on-line Voronoi tesselation.
-- [ ] Add standalone train and eval scripts.
-- [ ] Add CUDA kernels for on-line Voronoi Tesselations.
+- [ ] Add `hubconf.py` for PyTorch Hub compatability.
 - [ ] Add example for extracting attribution maps with Att.Flow and Proto.PCA.
 - [ ] Add example for computing sufficiency and comprehensiveness.
 - [ ] Add assets for computed attribution maps for XAI experiments.
 - [ ] Add code and examples for salient segmentation.
-- [ ] Add code and examples for feature correspondences.
 
 ## Citation
 
-If you find our work useful, please consider citing our work.
+If you find our work useful, please consider citing our paper.
+
 ```
 @inproceedings{Aasan2024,
   title={A Spitting Image: Modular Superpixel Tokenization in Vision Transformers},
   author={Aasan, Marius and Kolbj\o{}rnsen, Odd and Schistad Solberg, Anne and Ram\'irez Rivera, Ad\'in},
-  booktitle={{CVF/ECCV} More Exploration, Less Exploitation Workshop ({MELEX} {ECCVW})},
+  booktitle={{CVF/ECCV} Computer Vision -- {ECCVW} 2024 -- {MELEX}},
   year={2024}
+  doi="https://doi.org/10.1007/978-3-031-93806-1_11",
 }
 ```
