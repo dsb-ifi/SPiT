@@ -31,8 +31,9 @@ _modelweights_url = dict(
 
 def _get_pretrained_weights(model:str, grad:bool=True, **kwargs):
     model_full = f'{model}_grad' if grad else model
+    url = f'{_modelweights_url.get(model_full, "")}?download=1'
     return torch.hub.load_state_dict_from_url(
-        _modelweights_url[model_full],
+        url=url,
         map_location="cpu",
         weights_only=True,
         **kwargs.get('torch_hub_kwargs', {})
