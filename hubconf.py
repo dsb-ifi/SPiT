@@ -2,7 +2,7 @@ import torch
 import warnings
 from typing import Union
 from collections import OrderedDict
-from .spit.nn import SPiT
+from spit.nn import SPiT
 
 dependencies = ['torch >= 2.1.0', 'torchvision >= 0.16.0', 'scipy >= 1.10.1', 'cupy >= 13.0.0', 'numba >= 0.59.0']
 
