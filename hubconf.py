@@ -77,7 +77,7 @@ def _get_pretrained_weights(model: str, grad: bool = False, **kwargs):
     local_path = f'{hub_dir}/checkpoints/{_prefix}{model}{_suffix}.pth'
     if not os.path.isfile(local_path):
         _download_model_weights(model, grad)
-    sd = torch.load(local_path, map_location='cpu')
+    sd = torch.load(local_path, map_location='cpu', weights_only=True)
     return sd
 
 # def _get_pretrained_weights(model:str, grad:bool=True, **kwargs):
