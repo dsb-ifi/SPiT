@@ -69,7 +69,7 @@ def _download_model_weights(model: str, grad: bool = False) -> str:
     
     return local_path
 
-def _get_pretrained_weights(model: str, grad: bool = False):
+def _get_pretrained_weights(model: str, grad: bool = False, **kwargs):
     '''Torch Hub does not like SharePoint URLs, so we download the weights manually.'''
     _prefix = 'SPiT_model_'
     _suffix = '_grad' if grad else ''
