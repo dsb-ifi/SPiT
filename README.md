@@ -57,8 +57,6 @@ This will load the model and downloaded the pretrained weights, stored in your l
 | ViT-S16 (w. grad.)    | [Manual Download](https://uio-my.sharepoint.com/:u:/g/personal/mariuaas_uio_no/EenEECYQaQZFl_GeU2N9q7YB-XOHNyaJXHnC74qREU3cSQ) |b8e4f1f219c3baef47fc465eaef9e0d4|
 | ViT-B16 | [Manual Download](https://uio-my.sharepoint.com/:u:/g/personal/mariuaas_uio_no/EUWJM_RY9IRPvM9dsp2Zzi8B6ZOnhQ_C666TMESzmAQ0sQ) |ce45dcbec70d61d1c9f944e1899247f1|
 | ViT-B16 (w. grad.)    | [Manual Download](https://uio-my.sharepoint.com/:u:/g/personal/mariuaas_uio_no/EdGx5GaXRshPpOh0gsCHU4cBeZ0FxexzuBm7vTtm67nuTw) |1caa683ecd885347208b0db58118bf40|
-|RViT-S16| Coming Soon | |
-| RViT-S16 (w. grad.) | Coming Soon | |
 | RViT-B16 | [Manual Download](https://uio-my.sharepoint.com/:u:/g/personal/mariuaas_uio_no/Ed9R0bQOmslLiPnFX_P0hRoBUf_zQ4pfHXZ3BpQ4iW8JYA) |18c13af67d10f407c3321eb1ca5eb568|
 | RViT-B16 (w. grad.) | [Manual Download](https://uio-my.sharepoint.com/:u:/g/personal/mariuaas_uio_no/EflpV7TP04RKmxg1qfiNovUBo149q0P9j4tmoOTQ-NkV-Q) |50d25403adfd5a12d7cb07f7ebfced97|
 
