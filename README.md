@@ -84,7 +84,7 @@ Note that the RViT models are inherently stochastic so that different runs can y
 - [X] Add manual links with MD5 hash for manual weight download.
 - [X] Add module for loading models, and provide example notebook.
 - [X] Create temporary solution to on-line Voronoi tesselation.
-- [ ] Add `hubconf.py` for PyTorch Hub compatability.
+- [X] Add `hubconf.py` for PyTorch Hub compatability.
 - [ ] Add example for extracting attribution maps with Att.Flow and Proto.PCA.
 - [ ] Add example for computing sufficiency and comprehensiveness.
 - [ ] Add assets for computed attribution maps for XAI experiments.
