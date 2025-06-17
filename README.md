@@ -37,15 +37,19 @@ pip install git+ssh://git@github.com/dsb-ifi/SPiT.git
 
 ## Loading models
 
-To load a Superpixel Transformer model, we suggest using the wrapper:
+You can load the Superpixel Transformer model easily via `torch.hub`:
 
 ```python
-from spit import load_model
-
-model = load_model.load_SPiT_B16(grad=True, pretrained=True)
+model = torch.hub.load(
+    'dsb-ifi/spit', 
+    'spit_base_16',
+    pretrained=True,
+    source='github',
+)
 ```
 
-This will load the model and downloaded the pretrained weights, stored in your local `torch.hub` directory. If you would rather download the full weights, please use:
+This will load the model and downloaded the pretrained weights, stored in your local `torch.hub` directory. 
+If you prefer downloading weights manually, feel free to use:
 
 | Model | Link | MD5 |
 |-|-|-|
@@ -63,7 +67,7 @@ This will load the model and downloaded the pretrained weights, stored in your l
 
 ## More Examples
 
-We provide a [Jupyter notebook](https://nbviewer.jupyter.org/github/dsb-ifi/SPiT/blob/main/notebooks/eval_in1k.ipynb) as a sandbox for loading, evaluating, and extracting segmentations for the models. *Examples will be updated along with new releases and updates for the project repo*.
+We provide a [Jupyter notebook](https://nbviewer.jupyter.org/github/dsb-ifi/SPiT/blob/main/notebooks/eval_in1k.ipynb) as a sandbox for loading, evaluating, and extracting segmentations for the models. 
 
 ## Notes:
 
