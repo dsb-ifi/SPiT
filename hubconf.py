@@ -1,10 +1,13 @@
+import os
 import torch
 import warnings
+import requests
+from tqdm import tqdm
 from typing import Union
 from collections import OrderedDict
 from spit.nn import SPiT
 
-dependencies = ['torch', 'torchvision', 'scipy', 'cupy', 'numba']
+dependencies = ['torch', 'torchvision', 'scipy', 'cupy', 'numba', 'requests', 'tqdm']
 
 _architecture_cfg = {
     'S': OrderedDict(depth=12, emb_dim= 384, heads= 6, dop_path=0),
@@ -29,15 +32,63 @@ _modelweights_url = dict(
     RViT_B16_grad = 'https://uio-my.sharepoint.com/:u:/g/personal/mariuaas_uio_no/EflpV7TP04RKmxg1qfiNovUBo149q0P9j4tmoOTQ-NkV-Q',
 )
 
-def _get_pretrained_weights(model:str, grad:bool=True, **kwargs):
+def _download_model_weights(model: str, grad: bool = False) -> str:
     model_full = f'{model}_grad' if grad else model
-    url = f'{_modelweights_url.get(model_full, "")}?download=1'
-    return torch.hub.load_state_dict_from_url(
-        url=url,
-        map_location="cpu",
-        weights_only=True,
-        **kwargs.get('torch_hub_kwargs', {})
-    )
+    if model_full not in _modelweights_url:
+        raise KeyError(f'Invalid model: {model_full}')
+    
+    hub_dir = torch.hub.get_dir()
+    local_path = os.path.join(hub_dir, 'checkpoints', f'{model_full}.pth')
+    url = _modelweights_url[model_full]
+    
+    if url == '':
+        raise NotImplementedError('Sorry! Weights for this model have not been uploaded yet!')
+    
+    url += '?download=1'
+    
+    if not os.path.exists(local_path):
+        print(f'Downloading pretrained weights for {model_full} to {local_path}...')
+        response = requests.get(url, stream=True)
+        if response.status_code == 200:
+            total_size = int(response.headers.get('content-length', 0))
+            with open(local_path, 'wb') as f, tqdm(
+                desc=model_full,
+                total=total_size,
+                unit='iB',
+                unit_scale=True,
+                unit_divisor=1024,
+            ) as pbar:
+                for chunk in response.iter_content(chunk_size=8192): 
+                    size = f.write(chunk)
+                    pbar.update(size)
+            print(f'Weights downloaded to: {local_path}')
+        else:
+            raise ConnectionError(
+                f'Failed to download weights: HTTP status code {response.status_code}'
+            )
+    
+    return local_path
+
+def _get_pretrained_weights(model: str, grad: bool = False):
+    '''Torch Hub does not like SharePoint URLs, so we download the weights manually.'''
+    _prefix = 'SPiT_model_'
+    _suffix = '_grad' if grad else ''
+    hub_dir = torch.hub.get_dir()
+    local_path = f'{hub_dir}/checkpoints/{_prefix}{model}{_suffix}.pth'
+    if not os.path.isfile(local_path):
+        _download_model_weights(model, grad)
+    sd = torch.load(local_path, map_location='cpu')
+    return sd
+
+# def _get_pretrained_weights(model:str, grad:bool=True, **kwargs):
+#     model_full = f'{model}_grad' if grad else model
+#     url = f'{_modelweights_url.get(model_full, "")}?download=1'
+#     return torch.hub.load_state_dict_from_url(
+#         url=url,
+#         map_location="cpu",
+#         weights_only=True,
+#         **kwargs.get('torch_hub_kwargs', {})
+#     )
 
 def spit_small_16(grad:bool=True, pretrained=False, **kwargs) -> SPiT:
     kwargs = {**_architecture_cfg['S'], **_std_cfg}
