@@ -4,7 +4,7 @@ from typing import Union
 from collections import OrderedDict
 from spit.nn import SPiT
 
-dependencies = ['torch >= 2.1.0', 'torchvision >= 0.16.0', 'scipy >= 1.10.1', 'cupy >= 13.0.0', 'numba >= 0.59.0']
+dependencies = ['torch', 'torchvision', 'scipy', 'cupy', 'numba']
 
 _architecture_cfg = {
     'S': OrderedDict(depth=12, emb_dim= 384, heads= 6, dop_path=0),
